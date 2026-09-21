@@ -1,3 +1,23 @@
+# 961-maintained Jev Ultrafast
+
+This repository is a maintained fork of [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast).
+
+## Upstream
+
+- Upstream: https://github.com/browser-use/jev-ultrafast
+- Fork: https://github.com/961app/jev-ultrafast
+- Upstream baseline currently pinned by 961 News Algorithm: `1231850a0bf1a0c0341fe408ef1668dbbfdfac46`
+
+## Maintenance policy
+
+Keep upstream Jev functionality intact by default. 961-specific changes should be narrowly scoped, tested, and documented. Prefer changes that improve browser lifecycle reliability, deterministic extraction support, observability, and production operation for the 961 News crawler.
+
+When syncing upstream, preserve the fork relationship and keep production dependencies pinned to an exact commit.
+
+## 961 News Crawler
+
+The 961 News Algorithm uses the Jev browser runtime for browser-backed source acquisition. Normal live-ticker polling intentionally does not invoke Jev's LLM agent loop; source-specific deterministic extraction runs through Jev's browser/CDP runtime instead.
+
 <img src="docs/banner.svg" alt="Jev Ultrafast · Browser Use × TypeSafe" width="100%" />
 
 # Jev Ultrafast ⚡
